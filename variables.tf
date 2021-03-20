@@ -12,6 +12,7 @@ variable "node_count" {
   description = "The initial node count for the pool, per availability zone. Changing this will force recreation of the resource."
   default     = "1"
 }
+
 variable "min_node_count" {
   description = "Minimum number of nodes for autoscaling, per availability zone."
   default = "1"
@@ -32,7 +33,7 @@ variable "machine_type" {
 
 variable "disk_size_in_gb" {
   description = "Disk size, in GB, for the nodes in the pool."
-  default     = "100"
+  default     = "20"
 }
 
 variable "node_tags" {
@@ -40,6 +41,7 @@ variable "node_tags" {
   description = "List of strings for tags on node pool VMs. These are generally used for firewall rules."
   default     = ["k8-cluster"]
 }
+
 
 variable "node_labels" {
   description = "Key Value Pairs of Labels to add to the nodes in the pool"
@@ -73,7 +75,7 @@ variable "auto_upgrade" {
 
 variable "preemptible_nodes" {
   description = "Whether to use preemptible nodes"
-  default     = false
+  default     = true
 }
 variable "image_type" {
   default = "COS"

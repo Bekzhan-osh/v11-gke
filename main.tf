@@ -1,6 +1,6 @@
 resource "google_container_node_pool" "primary_preemptible_nodes" {
   cluster            = "${google_container_cluster.primary.name}"
-  name               = "${var.name}"
+  name_prefix        = "${var.name}"
   location           = "${var.google_region}"
   version            = "${var.cluster_version}"
   node_count         = "${var.node_count}"
