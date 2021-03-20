@@ -160,4 +160,3 @@ Default: `false`
 * Do we want to be able to set taints on node pools?
 * Do we want to enable auto-repair always on node pools?
 # gke-node-pool
-# v11-gke
