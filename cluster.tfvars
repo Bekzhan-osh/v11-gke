@@ -1,0 +1,17 @@
+google_project_id        = "eternal-ruler-308205"
+google_domain_name       = "jbnl.tk"
+google_email             = "john.oshi44@gmail.com"
+cluster_version          = "1.16"
+google_bucket_name       = "jbnl"
+deployment_environment   = "dev"
+google_credentials_json  = "fuchicorp-service-account.json"
+deployment_name          = "k8-fuchicrops"
+google_region            = "us-central1-a"
+cluster_node_count       = "1"  
+cluster_name             = "k8-fuchicrops"
+name              = "node-pool-1"
+machine_type      = ""
+min_node_count    = "1"
+max_node_count    = "1"
+
+
